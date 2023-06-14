@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat+Alternates:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat+Alternates:ital@1&display=swap");
+:root {
+  --primary-color: #b7d011;
+  --secondary-color: #8c91a4;
+  --third-color: #e4e5e4; /*card background color*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #c3c5c2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header {
+  background-image: url(./images/Cocktail_Banner.jpg?ezimgfmt=rs%3Adevice%2Frscb9-1%2Fng%3Awebp%2Fngcb9);
+  height: 487px;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  font-family: "Libre Baskerville", serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#submit input {
+  border-radius: 5px;
+  padding: 10px;
+}
+#submit button {
+  border-radius: 5px;
+  background-color: #bfbfbf;
+  border-color: #bfbfbf;
+}
+#submit i {
+  background-color: #bfbfbf;
+  padding: 10px;
+}
+.header h1 {
+  font-size: 55px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+}
+#submit {
+  margin-bottom: 1rem;
+}
+
+.fa-search,
+.fa-random {
+  margin-right: 0.25rem;
+}
+
+.card {
+  background-color: #e4e5e4;
+  border-radius: 8px;
+  box-shadow: 0 9px 9px rgba(10, 8, 8, 0.7);
+  padding: 0.4rem;
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-family: "Montserrat Alternates', sans-serif";
+  margin-top: 7px;
+}
+/* style category */
+.categoryParagraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3px;
+}
+.category {
+  font-size: 0.9em;
+  width: 45%;
+  height: 7%;
+  padding: 7px 5px 7px 5px;
+}
+
+/* ingredients styling */
+.ingredientsContainer {
+  height: 8%;
+}
+
+/* measuresContaier */
+.measuresContainer {
+  height: 13%;
+}
+
+/* styling instruction */
+.instructionsContainer {
+  height: 10%;
+}
+.card:hover {
+  transform: translateY(7px);
+}
+.instructionsButton {
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .category {
+    width: 45%;
+    padding: 7px 5px 7px 5px;
+  }
+
+  .ingredientsContainer {
+    height: 7%;
+  }
+
+  /* measuresContaier */
+  .measuresContainer {
+    height: 10%;
+  }
+
+  /* styling instruction */
+  .instructionsContainer {
+    height: 10%;
+  }
+}
