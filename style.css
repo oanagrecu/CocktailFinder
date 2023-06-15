@@ -86,7 +86,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 3px;
+  /* padding-top: 3px; */
 }
 .category {
   font-size: 0.9em;
@@ -107,7 +107,7 @@ body {
 
 /* styling instruction */
 .instructionsContainer {
-  height: 10%;
+  height: 12%;
 }
 .card:hover {
   transform: translateY(7px);
@@ -115,6 +115,15 @@ body {
 .instructionsButton {
   padding: 10px;
 }
+#main-footer {
+  text-align: center;
+  background-color: #e4e5e4;
+  color: #136828;
+  padding: 10px;
+  font-size: 21px;
+  width: 100%;
+}
+
 @media (max-width: 600px) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -131,12 +140,12 @@ body {
   }
 
   .ingredientsContainer {
-    height: 7%;
+    height: 6.5%;
   }
 
   /* measuresContaier */
   .measuresContainer {
-    height: 10%;
+    height: 7.5%;
   }
 
   /* styling instruction */
