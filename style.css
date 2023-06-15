@@ -140,16 +140,16 @@ body {
   }
 
   .ingredientsContainer {
-    height: 6.5%;
+    height: 7.5%;
   }
 
   /* measuresContaier */
   .measuresContainer {
-    height: 7.5%;
+    height: 8.5%;
   }
 
   /* styling instruction */
   .instructionsContainer {
-    height: 10%;
+    height: 11%;
   }
 }
