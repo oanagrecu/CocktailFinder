@@ -74,6 +74,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: auto;
 }
 
 .card img {
@@ -85,7 +86,7 @@ body {
   font-family: "Montserrat Alternates', sans-serif";
   margin-top: 7px;
 }
-/* style category */
+/* styling category */
 .categoryParagraph {
   display: flex;
   flex-direction: row;
@@ -103,6 +104,7 @@ body {
 }
 .instructionsButton {
   padding: 10px;
+  margin-bottom: 20px;
 }
 #main-footer {
   text-align: center;
