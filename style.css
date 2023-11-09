@@ -50,7 +50,7 @@ body {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.5rem;
   padding: 1.5rem;
 }
@@ -70,6 +70,10 @@ body {
   padding: 0.4rem;
   text-align: center;
   transition: transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .card img {
@@ -87,28 +91,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   /* padding-top: 3px; */
+  font-family: "Montserrat Alternates', sans-serif";
 }
 .category {
-  font-size: 0.9em;
   width: 45%;
-  height: 7%;
-  padding: 7px 5px 7px 5px;
+  padding: 5px;
 }
 
-/* ingredients styling */
-.ingredientsContainer {
-  height: 8%;
-}
-
-/* measuresContaier */
-.measuresContainer {
-  height: 13%;
-}
-
-/* styling instruction */
-.instructionsContainer {
-  height: 12%;
-}
 .card:hover {
   transform: translateY(7px);
 }
@@ -122,6 +111,7 @@ body {
   padding: 10px;
   font-size: 21px;
   width: 100%;
+  font-family: "Montserrat Alternates', sans-serif";
 }
 
 @media (max-width: 600px) {
@@ -136,20 +126,6 @@ body {
   }
   .category {
     width: 45%;
-    padding: 7px 5px 7px 5px;
-  }
-
-  .ingredientsContainer {
-    height: 8.5%;
-  }
-
-  /* measuresContaier */
-  .measuresContainer {
-    height: 12.5%;
-  }
-
-  /* styling instruction */
-  .instructionsContainer {
-    height: 11%;
+    padding: 5px;
   }
 }

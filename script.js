@@ -338,14 +338,11 @@ collection.forEach((drink) => {
   const cat2 = document.createElement("span");
   cat2.textContent = `${drink.category[1]}`;
   cat2.classList.add("category");
-
+  // cat1.style.height = "30px";
+  // cat2.style.height = "30px";
   // category.textContent = `${drink.category.join(", ")}`;
   cat1.style.backgroundColor = "#b7d011";
   cat2.style.backgroundColor = "#b7d011";
-  cat1.style.paddingTop = "5px";
-  cat1.style.marginRight = "4px";
-  cat2.style.paddingTop = "5px";
-  cat2.style.marginRight = "4px";
   category.appendChild(cat1);
   category.appendChild(cat2);
   card.appendChild(category);
